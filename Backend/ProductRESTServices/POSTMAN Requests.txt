@@ -1,0 +1,28 @@
+Product
+GET - getAllProducts
+GET - getProduct?pid=2
+POST- saveProduct
+	{
+	   "pname" : "XYZ"
+	}
+PUT- updateProductName
+	{
+    	   "pid":11,
+    	   "pname":"ABCD"
+	}
+
+
+ProductType
+GET - getAllProductCategory
+GET - getProductCategory?ptid=41
+POST - saveProductCategory
+	{
+    	   "pid":{
+    		"pid":3
+    	   },
+    	   "ptname":"XYZ"
+	}
+PUT - updatePtname/41(ptid)
+	{
+	   "ptname":"tudka-basmati"
+	}
