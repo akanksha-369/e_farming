@@ -1,0 +1,67 @@
+/* HomePage.css */
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hide all slides by default */
+  background-size: cover; /* Key change: use cover */
+  background-position: center; /* Maintain center position */
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {  /* Style the image */
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Or cover, or fill, depending on your needs */
+  object-position: center;
+  display: none;
+}
+
+.image-container {
+  width: 100%; /* Or a specific width */
+  height: 300px; /* Or a specific height */
+  overflow: hidden; /* Important to prevent content from spilling out */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain */
+  object-position: center;
+}
+
+.image-container {
+    background-size: cover; /* or contain */
+    background-position: center;
+    touch-action: manipulation
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
